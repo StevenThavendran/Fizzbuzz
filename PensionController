@@ -1,0 +1,25 @@
+package com.fdmgroup.pension.task3;
+
+public class PensionController {
+
+	public void handlePensions(Person[] people){
+		
+		for (Person eachPerson: people){
+			String dateOfBirth = eachPerson.getDateOfBirth();
+			String year = dateOfBirth.substring(6);
+			String first = eachPerson.getFirstName(); 
+			String last = eachPerson.getLastName();
+			String name=first + " " + last;
+			PensionLogic pensionLogic = new PensionLogic();
+			boolean acceptable = pensionLogic.isPensionable(eachPerson, year);
+			System.out.println(name);
+			System.out.println(acceptable);
+			System.out.println(eachPerson.getDateOfBirth());
+		
+		}
+		
+		
+	}
+	
+	
+}
