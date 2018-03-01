@@ -1,0 +1,20 @@
+package com.fdmgroup.pension.task3;
+
+public class PensionLogic {
+
+	public boolean isPensionable(Person person, String year){
+		
+		
+		
+	int value = Integer.parseInt(year);
+	int Age = 2018 - value;
+		if(Age<60){
+		return false;}
+		
+		else {
+			return true;
+		}
+		
+	}
+	
+}
