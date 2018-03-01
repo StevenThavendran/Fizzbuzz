@@ -1,0 +1,42 @@
+package com.fdmgroup.pension.task3;
+//variables
+public class Animals {
+
+	int age;
+	String name;
+	String size;
+
+//constructor.word document
+	public Animals(int age, String name, String size) {
+		this.age = age;
+		this.name = name;
+		this.size = size;
+	}
+	
+	//constructor and variables are fundamental. The master template, plato's perfect form.
+	
+	public String toString() {
+		return "Animals [age=" + age + ", name=" + name + ", size=" + size + "]";
+	}
+	//representation
+	public void getOlder(int years){
+		age = age+years;
+		System.out.println("Has aged by " + years + " years");
+	}
+	//this is the method. The equation 
+
+
+	public static void main(String[] args) {
+		
+			Animals koala = new Animals(5, "Kenny", "Large");
+									
+			System.out.println(koala);
+			
+			koala.getOlder(3); //.exe
+			
+			System.out.println(koala);
+			
+			Animal cat = new Animal();
+	}
+
+}
