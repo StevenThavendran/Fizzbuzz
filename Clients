@@ -1,0 +1,20 @@
+package com.fdmgroup.pension.task3;
+
+public class Clients {
+	
+	public static void main(String[] args){
+		
+		Person[] people = new Person[3];
+		
+		people[0]= new Person("John","Smith","28/06/1993");
+		people[1]= new Person("Jane","Doe","05/01/1950");
+		people[2]= new Person("Fred","Bloggs","12/12/1949");
+		
+		PensionController controller = new PensionController ();
+		controller.handlePensions(people);
+		 
+	}
+
+}
+
+
